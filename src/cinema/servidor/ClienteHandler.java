@@ -46,15 +46,22 @@ public class ClienteHandler implements Runnable {
              OutputStream saida = s.getOutputStream()) {
 
             String linha;
+            boolean saiuComSair = false;
             while ((linha = entrada.readLine()) != null) {
                 String resposta = processarComando(linha);
                 saida.write((resposta + "\n").getBytes(StandardCharsets.UTF_8));
                 saida.flush();
                 if (Protocolo.CMD_SAIR.equals(linha.trim())) {
+                    saiuComSair = true;
                     break;
                 }
             }
-            Log.info("Cliente encerrou a sessao normalmente: " + s.getRemoteSocketAddress());
+            if (saiuComSair) {
+                Log.info("Cliente encerrou a sessao normalmente (SAIR): " + s.getRemoteSocketAddress());
+            } else {
+                Log.info("Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): "
+                        + s.getRemoteSocketAddress());
+            }
         } catch (SocketException e) {
             Log.info("Cliente desconectou abruptamente (SocketException): " + e.getMessage());
         } catch (IOException e) {

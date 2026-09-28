@@ -2,86 +2,86 @@
 ===================================================================
   Experimento 2 (COM sync) - Cenario A - delay-ms=10
 ===================================================================
-[20:15:39.337][main] Sem --peer configurado - executando como no unico. Papel=PRIMARIA
-[20:15:39.340][Replicacao-Servidor-A] Canal de replicacao escutando na porta 6000
-[20:15:39.345][main] === Servidor 'A' iniciado === papel=PRIMARIA porta-tcp=5000 porta-udp=5100 porta-repl=6000 sync=true delay-ms=10 (sem peer)
-[20:15:39.345][StatusUDP] StatusUDP escutando na porta 5100
-[20:15:39.402][ClienteHandler-A-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:60180 (total conectados=1)
-[20:15:39.404][ClienteHandler-A-1] Cliente encerrou a sessao normalmente: /[0:0:0:0:0:0:0:1]:60180
-[20:15:39.405][ClienteHandler-A-1] Conexao encerrada. Total conectados=0
+[20:20:59.969][main] Sem --peer configurado - executando como no unico. Papel=PRIMARIA
+[20:20:59.971][Replicacao-Servidor-A] Canal de replicacao escutando na porta 6000
+[20:20:59.975][main] === Servidor 'A' iniciado === papel=PRIMARIA porta-tcp=5000 porta-udp=5100 porta-repl=6000 sync=true delay-ms=10 (sem peer)
+[20:20:59.976][StatusUDP] StatusUDP escutando na porta 5100
+[20:21:00.037][ClienteHandler-A-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:40230 (total conectados=1)
+[20:21:00.038][ClienteHandler-A-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:40230
+[20:21:00.038][ClienteHandler-A-1] Conexao encerrada. Total conectados=0
 === CENARIO A: contador (lost update) - 3 clientes x 10 assentos distintos ===
-[20:15:39.449][ClienteHandler-A-2] Cliente conectado: /127.0.0.1:37506 (total conectados=1)
-[20:15:39.449][ClienteHandler-A-3] Cliente conectado: /127.0.0.1:37524 (total conectados=2)
-[20:15:39.449][ClienteHandler-A-4] Cliente conectado: /127.0.0.1:37522 (total conectados=3)
-[20:15:39.464][ClienteHandler-A-3] RESERVAR assento=21 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.477][ClienteHandler-A-3] contador totalReservas antes=0 depois=1
-[20:15:39.487][ClienteHandler-A-2] RESERVAR assento=1 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.497][ClienteHandler-A-2] contador totalReservas antes=1 depois=2
-[20:15:39.508][ClienteHandler-A-4] RESERVAR assento=11 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.518][ClienteHandler-A-4] contador totalReservas antes=2 depois=3
-[20:15:39.528][ClienteHandler-A-3] RESERVAR assento=22 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.539][ClienteHandler-A-3] contador totalReservas antes=3 depois=4
-[20:15:39.549][ClienteHandler-A-2] RESERVAR assento=2 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.559][ClienteHandler-A-2] contador totalReservas antes=4 depois=5
-[20:15:39.570][ClienteHandler-A-4] RESERVAR assento=12 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.580][ClienteHandler-A-4] contador totalReservas antes=5 depois=6
-[20:15:39.590][ClienteHandler-A-3] RESERVAR assento=23 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.601][ClienteHandler-A-3] contador totalReservas antes=6 depois=7
-[20:15:39.611][ClienteHandler-A-2] RESERVAR assento=3 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.621][ClienteHandler-A-2] contador totalReservas antes=7 depois=8
-[20:15:39.632][ClienteHandler-A-4] RESERVAR assento=13 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.642][ClienteHandler-A-4] contador totalReservas antes=8 depois=9
-[20:15:39.652][ClienteHandler-A-3] RESERVAR assento=24 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.663][ClienteHandler-A-3] contador totalReservas antes=9 depois=10
-[20:15:39.673][ClienteHandler-A-2] RESERVAR assento=4 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.683][ClienteHandler-A-2] contador totalReservas antes=10 depois=11
-[20:15:39.694][ClienteHandler-A-4] RESERVAR assento=14 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.704][ClienteHandler-A-4] contador totalReservas antes=11 depois=12
-[20:15:39.714][ClienteHandler-A-3] RESERVAR assento=25 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.725][ClienteHandler-A-3] contador totalReservas antes=12 depois=13
-[20:15:39.735][ClienteHandler-A-2] RESERVAR assento=5 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.745][ClienteHandler-A-2] contador totalReservas antes=13 depois=14
-[20:15:39.755][ClienteHandler-A-4] RESERVAR assento=15 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.766][ClienteHandler-A-4] contador totalReservas antes=14 depois=15
-[20:15:39.776][ClienteHandler-A-3] RESERVAR assento=26 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.786][ClienteHandler-A-3] contador totalReservas antes=15 depois=16
-[20:15:39.797][ClienteHandler-A-2] RESERVAR assento=6 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.807][ClienteHandler-A-2] contador totalReservas antes=16 depois=17
-[20:15:39.817][ClienteHandler-A-4] RESERVAR assento=16 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.828][ClienteHandler-A-4] contador totalReservas antes=17 depois=18
-[20:15:39.838][ClienteHandler-A-3] RESERVAR assento=27 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.849][ClienteHandler-A-3] contador totalReservas antes=18 depois=19
-[20:15:39.859][ClienteHandler-A-2] RESERVAR assento=7 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.869][ClienteHandler-A-2] contador totalReservas antes=19 depois=20
-[20:15:39.880][ClienteHandler-A-4] RESERVAR assento=17 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.890][ClienteHandler-A-4] contador totalReservas antes=20 depois=21
-[20:15:39.901][ClienteHandler-A-3] RESERVAR assento=28 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.911][ClienteHandler-A-3] contador totalReservas antes=21 depois=22
-[20:15:39.921][ClienteHandler-A-2] RESERVAR assento=8 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.932][ClienteHandler-A-2] contador totalReservas antes=22 depois=23
-[20:15:39.942][ClienteHandler-A-4] RESERVAR assento=18 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:39.953][ClienteHandler-A-4] contador totalReservas antes=23 depois=24
-[20:15:39.963][ClienteHandler-A-3] RESERVAR assento=29 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:39.973][ClienteHandler-A-3] contador totalReservas antes=24 depois=25
-[20:15:39.984][ClienteHandler-A-2] RESERVAR assento=9 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:39.994][ClienteHandler-A-2] contador totalReservas antes=25 depois=26
-[20:15:40.004][ClienteHandler-A-4] RESERVAR assento=19 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:40.015][ClienteHandler-A-4] contador totalReservas antes=26 depois=27
-[20:15:40.025][ClienteHandler-A-3] RESERVAR assento=30 usuario=clienteA3 antes=LIVRE depois=clienteA3
-[20:15:40.036][ClienteHandler-A-3] contador totalReservas antes=27 depois=28
-[20:15:40.036][ClienteHandler-A-3] Cliente encerrou a sessao normalmente: /127.0.0.1:37524
-[20:15:40.036][ClienteHandler-A-3] Conexao encerrada. Total conectados=2
-[20:15:40.046][ClienteHandler-A-2] RESERVAR assento=10 usuario=clienteA1 antes=LIVRE depois=clienteA1
-[20:15:40.056][ClienteHandler-A-2] contador totalReservas antes=28 depois=29
-[20:15:40.057][ClienteHandler-A-2] Cliente encerrou a sessao normalmente: /127.0.0.1:37506
-[20:15:40.057][ClienteHandler-A-2] Conexao encerrada. Total conectados=1
-[20:15:40.067][ClienteHandler-A-4] RESERVAR assento=20 usuario=clienteA2 antes=LIVRE depois=clienteA2
-[20:15:40.077][ClienteHandler-A-4] contador totalReservas antes=29 depois=30
-[20:15:40.078][ClienteHandler-A-4] Cliente encerrou a sessao normalmente: /127.0.0.1:37522
-[20:15:40.078][ClienteHandler-A-4] Conexao encerrada. Total conectados=0
-[20:15:40.079][ClienteHandler-A-5] Cliente conectado: /127.0.0.1:36040 (total conectados=1)
-[20:15:40.080][ClienteHandler-A-5] Cliente encerrou a sessao normalmente: /127.0.0.1:36040
-[20:15:40.080][ClienteHandler-A-5] Conexao encerrada. Total conectados=0
+[20:21:00.075][ClienteHandler-A-2] Cliente conectado: /127.0.0.1:52986 (total conectados=1)
+[20:21:00.075][ClienteHandler-A-3] Cliente conectado: /127.0.0.1:52994 (total conectados=2)
+[20:21:00.075][ClienteHandler-A-4] Cliente conectado: /127.0.0.1:52996 (total conectados=3)
+[20:21:00.089][ClienteHandler-A-2] RESERVAR assento=1 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.101][ClienteHandler-A-2] contador totalReservas antes=0 depois=1
+[20:21:00.111][ClienteHandler-A-4] RESERVAR assento=11 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.122][ClienteHandler-A-4] contador totalReservas antes=1 depois=2
+[20:21:00.132][ClienteHandler-A-3] RESERVAR assento=21 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.142][ClienteHandler-A-3] contador totalReservas antes=2 depois=3
+[20:21:00.152][ClienteHandler-A-2] RESERVAR assento=2 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.163][ClienteHandler-A-2] contador totalReservas antes=3 depois=4
+[20:21:00.173][ClienteHandler-A-4] RESERVAR assento=12 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.184][ClienteHandler-A-4] contador totalReservas antes=4 depois=5
+[20:21:00.194][ClienteHandler-A-3] RESERVAR assento=22 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.204][ClienteHandler-A-3] contador totalReservas antes=5 depois=6
+[20:21:00.215][ClienteHandler-A-2] RESERVAR assento=3 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.225][ClienteHandler-A-2] contador totalReservas antes=6 depois=7
+[20:21:00.235][ClienteHandler-A-4] RESERVAR assento=13 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.246][ClienteHandler-A-4] contador totalReservas antes=7 depois=8
+[20:21:00.256][ClienteHandler-A-3] RESERVAR assento=23 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.266][ClienteHandler-A-3] contador totalReservas antes=8 depois=9
+[20:21:00.277][ClienteHandler-A-2] RESERVAR assento=4 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.288][ClienteHandler-A-2] contador totalReservas antes=9 depois=10
+[20:21:00.298][ClienteHandler-A-4] RESERVAR assento=14 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.308][ClienteHandler-A-4] contador totalReservas antes=10 depois=11
+[20:21:00.319][ClienteHandler-A-3] RESERVAR assento=24 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.329][ClienteHandler-A-3] contador totalReservas antes=11 depois=12
+[20:21:00.339][ClienteHandler-A-2] RESERVAR assento=5 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.350][ClienteHandler-A-2] contador totalReservas antes=12 depois=13
+[20:21:00.360][ClienteHandler-A-4] RESERVAR assento=15 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.370][ClienteHandler-A-4] contador totalReservas antes=13 depois=14
+[20:21:00.381][ClienteHandler-A-3] RESERVAR assento=25 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.391][ClienteHandler-A-3] contador totalReservas antes=14 depois=15
+[20:21:00.401][ClienteHandler-A-2] RESERVAR assento=6 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.412][ClienteHandler-A-2] contador totalReservas antes=15 depois=16
+[20:21:00.422][ClienteHandler-A-4] RESERVAR assento=16 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.433][ClienteHandler-A-4] contador totalReservas antes=16 depois=17
+[20:21:00.443][ClienteHandler-A-3] RESERVAR assento=26 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.454][ClienteHandler-A-3] contador totalReservas antes=17 depois=18
+[20:21:00.464][ClienteHandler-A-2] RESERVAR assento=7 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.474][ClienteHandler-A-2] contador totalReservas antes=18 depois=19
+[20:21:00.485][ClienteHandler-A-4] RESERVAR assento=17 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.495][ClienteHandler-A-4] contador totalReservas antes=19 depois=20
+[20:21:00.505][ClienteHandler-A-3] RESERVAR assento=27 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.516][ClienteHandler-A-3] contador totalReservas antes=20 depois=21
+[20:21:00.526][ClienteHandler-A-2] RESERVAR assento=8 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.537][ClienteHandler-A-2] contador totalReservas antes=21 depois=22
+[20:21:00.547][ClienteHandler-A-4] RESERVAR assento=18 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.557][ClienteHandler-A-4] contador totalReservas antes=22 depois=23
+[20:21:00.568][ClienteHandler-A-3] RESERVAR assento=28 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.578][ClienteHandler-A-3] contador totalReservas antes=23 depois=24
+[20:21:00.589][ClienteHandler-A-2] RESERVAR assento=9 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.599][ClienteHandler-A-2] contador totalReservas antes=24 depois=25
+[20:21:00.609][ClienteHandler-A-4] RESERVAR assento=19 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.620][ClienteHandler-A-4] contador totalReservas antes=25 depois=26
+[20:21:00.630][ClienteHandler-A-3] RESERVAR assento=29 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.640][ClienteHandler-A-3] contador totalReservas antes=26 depois=27
+[20:21:00.651][ClienteHandler-A-2] RESERVAR assento=10 usuario=clienteA1 antes=LIVRE depois=clienteA1
+[20:21:00.661][ClienteHandler-A-2] contador totalReservas antes=27 depois=28
+[20:21:00.662][ClienteHandler-A-2] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:52986
+[20:21:00.662][ClienteHandler-A-2] Conexao encerrada. Total conectados=2
+[20:21:00.672][ClienteHandler-A-4] RESERVAR assento=20 usuario=clienteA2 antes=LIVRE depois=clienteA2
+[20:21:00.682][ClienteHandler-A-4] contador totalReservas antes=28 depois=29
+[20:21:00.682][ClienteHandler-A-4] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:52996
+[20:21:00.682][ClienteHandler-A-4] Conexao encerrada. Total conectados=1
+[20:21:00.692][ClienteHandler-A-3] RESERVAR assento=30 usuario=clienteA3 antes=LIVRE depois=clienteA3
+[20:21:00.702][ClienteHandler-A-3] contador totalReservas antes=29 depois=30
+[20:21:00.704][ClienteHandler-A-3] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:52994
+[20:21:00.704][ClienteHandler-A-3] Conexao encerrada. Total conectados=0
+[20:21:00.707][ClienteHandler-A-5] Cliente conectado: /127.0.0.1:53006 (total conectados=1)
+[20:21:00.709][ClienteHandler-A-5] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:53006
+[20:21:00.710][ClienteHandler-A-5] Conexao encerrada. Total conectados=0
 
 --- Resumo cenario A ---
 Requisicoes enviadas : 30
@@ -96,66 +96,66 @@ VEREDITO: CONSISTENTE
 ===================================================================
   Experimento 2 (COM sync) - Cenario B - delay-ms=10
 ===================================================================
-[20:15:40.428][main] Sem --peer configurado - executando como no unico. Papel=PRIMARIA
-[20:15:40.430][Replicacao-Servidor-A] Canal de replicacao escutando na porta 6010
-[20:15:40.434][main] === Servidor 'A' iniciado === papel=PRIMARIA porta-tcp=5010 porta-udp=5110 porta-repl=6010 sync=true delay-ms=10 (sem peer)
-[20:15:40.436][StatusUDP] StatusUDP escutando na porta 5110
-[20:15:40.496][ClienteHandler-A-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:44784 (total conectados=1)
-[20:15:40.498][ClienteHandler-A-1] Cliente encerrou a sessao normalmente: /[0:0:0:0:0:0:0:1]:44784
-[20:15:40.498][ClienteHandler-A-1] Conexao encerrada. Total conectados=0
+[20:21:01.061][main] Sem --peer configurado - executando como no unico. Papel=PRIMARIA
+[20:21:01.063][Replicacao-Servidor-A] Canal de replicacao escutando na porta 6010
+[20:21:01.067][main] === Servidor 'A' iniciado === papel=PRIMARIA porta-tcp=5010 porta-udp=5110 porta-repl=6010 sync=true delay-ms=10 (sem peer)
+[20:21:01.068][StatusUDP] StatusUDP escutando na porta 5110
+[20:21:01.130][ClienteHandler-A-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:37912 (total conectados=1)
+[20:21:01.132][ClienteHandler-A-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:37912
+[20:21:01.133][ClienteHandler-A-1] Conexao encerrada. Total conectados=0
 === CENARIO B: dupla reserva (check-then-act) - 3 clientes disputando os mesmos 10 assentos ===
-[20:15:40.544][ClienteHandler-A-2] Cliente conectado: /127.0.0.1:59028 (total conectados=1)
-[20:15:40.544][ClienteHandler-A-3] Cliente conectado: /127.0.0.1:59030 (total conectados=2)
-[20:15:40.544][ClienteHandler-A-4] Cliente conectado: /127.0.0.1:59032 (total conectados=3)
-[20:15:40.560][ClienteHandler-A-2] RESERVAR assento=1 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.572][ClienteHandler-A-2] contador totalReservas antes=0 depois=1
-[20:15:40.583][ClienteHandler-A-3] RESERVAR assento=1 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.594][ClienteHandler-A-4] RESERVAR assento=1 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.604][ClienteHandler-A-2] RESERVAR assento=2 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.614][ClienteHandler-A-2] contador totalReservas antes=1 depois=2
-[20:15:40.625][ClienteHandler-A-3] RESERVAR assento=2 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.635][ClienteHandler-A-4] RESERVAR assento=2 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.646][ClienteHandler-A-2] RESERVAR assento=3 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.656][ClienteHandler-A-2] contador totalReservas antes=2 depois=3
-[20:15:40.666][ClienteHandler-A-3] RESERVAR assento=3 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.677][ClienteHandler-A-4] RESERVAR assento=3 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.688][ClienteHandler-A-2] RESERVAR assento=4 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.698][ClienteHandler-A-2] contador totalReservas antes=3 depois=4
-[20:15:40.708][ClienteHandler-A-3] RESERVAR assento=4 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.719][ClienteHandler-A-4] RESERVAR assento=4 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.729][ClienteHandler-A-2] RESERVAR assento=5 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.740][ClienteHandler-A-2] contador totalReservas antes=4 depois=5
-[20:15:40.751][ClienteHandler-A-3] RESERVAR assento=5 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.761][ClienteHandler-A-4] RESERVAR assento=5 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.772][ClienteHandler-A-2] RESERVAR assento=6 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.782][ClienteHandler-A-2] contador totalReservas antes=5 depois=6
-[20:15:40.793][ClienteHandler-A-3] RESERVAR assento=6 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.803][ClienteHandler-A-4] RESERVAR assento=6 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.814][ClienteHandler-A-2] RESERVAR assento=7 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.824][ClienteHandler-A-2] contador totalReservas antes=6 depois=7
-[20:15:40.835][ClienteHandler-A-3] RESERVAR assento=7 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.845][ClienteHandler-A-4] RESERVAR assento=7 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.856][ClienteHandler-A-2] RESERVAR assento=8 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.866][ClienteHandler-A-2] contador totalReservas antes=7 depois=8
-[20:15:40.877][ClienteHandler-A-3] RESERVAR assento=8 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.887][ClienteHandler-A-4] RESERVAR assento=8 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.897][ClienteHandler-A-2] RESERVAR assento=9 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.907][ClienteHandler-A-2] contador totalReservas antes=8 depois=9
-[20:15:40.918][ClienteHandler-A-3] RESERVAR assento=9 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.928][ClienteHandler-A-4] RESERVAR assento=9 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.938][ClienteHandler-A-2] RESERVAR assento=10 usuario=clienteB2 antes=LIVRE depois=clienteB2
-[20:15:40.949][ClienteHandler-A-2] contador totalReservas antes=9 depois=10
-[20:15:40.949][ClienteHandler-A-2] Cliente encerrou a sessao normalmente: /127.0.0.1:59028
-[20:15:40.949][ClienteHandler-A-2] Conexao encerrada. Total conectados=2
-[20:15:40.959][ClienteHandler-A-3] RESERVAR assento=10 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.959][ClienteHandler-A-3] Cliente encerrou a sessao normalmente: /127.0.0.1:59030
-[20:15:40.959][ClienteHandler-A-3] Conexao encerrada. Total conectados=1
-[20:15:40.969][ClienteHandler-A-4] RESERVAR assento=10 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
-[20:15:40.970][ClienteHandler-A-4] Cliente encerrou a sessao normalmente: /127.0.0.1:59032
-[20:15:40.970][ClienteHandler-A-4] Conexao encerrada. Total conectados=0
-[20:15:40.970][ClienteHandler-A-5] Cliente conectado: /127.0.0.1:59060 (total conectados=1)
-[20:15:40.971][ClienteHandler-A-5] Cliente encerrou a sessao normalmente: /127.0.0.1:59060
-[20:15:40.971][ClienteHandler-A-5] Conexao encerrada. Total conectados=0
+[20:21:01.174][ClienteHandler-A-2] Cliente conectado: /127.0.0.1:44834 (total conectados=1)
+[20:21:01.174][ClienteHandler-A-3] Cliente conectado: /127.0.0.1:44844 (total conectados=2)
+[20:21:01.174][ClienteHandler-A-4] Cliente conectado: /127.0.0.1:44842 (total conectados=3)
+[20:21:01.188][ClienteHandler-A-2] RESERVAR assento=1 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.199][ClienteHandler-A-2] contador totalReservas antes=0 depois=1
+[20:21:01.211][ClienteHandler-A-3] RESERVAR assento=1 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.222][ClienteHandler-A-4] RESERVAR assento=1 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.232][ClienteHandler-A-2] RESERVAR assento=2 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.242][ClienteHandler-A-2] contador totalReservas antes=1 depois=2
+[20:21:01.253][ClienteHandler-A-3] RESERVAR assento=2 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.263][ClienteHandler-A-4] RESERVAR assento=2 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.274][ClienteHandler-A-2] RESERVAR assento=3 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.284][ClienteHandler-A-2] contador totalReservas antes=2 depois=3
+[20:21:01.294][ClienteHandler-A-3] RESERVAR assento=3 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.305][ClienteHandler-A-4] RESERVAR assento=3 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.315][ClienteHandler-A-2] RESERVAR assento=4 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.325][ClienteHandler-A-2] contador totalReservas antes=3 depois=4
+[20:21:01.336][ClienteHandler-A-3] RESERVAR assento=4 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.346][ClienteHandler-A-4] RESERVAR assento=4 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.357][ClienteHandler-A-2] RESERVAR assento=5 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.367][ClienteHandler-A-2] contador totalReservas antes=4 depois=5
+[20:21:01.378][ClienteHandler-A-3] RESERVAR assento=5 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.388][ClienteHandler-A-4] RESERVAR assento=5 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.399][ClienteHandler-A-2] RESERVAR assento=6 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.409][ClienteHandler-A-2] contador totalReservas antes=5 depois=6
+[20:21:01.420][ClienteHandler-A-3] RESERVAR assento=6 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.430][ClienteHandler-A-4] RESERVAR assento=6 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.441][ClienteHandler-A-2] RESERVAR assento=7 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.451][ClienteHandler-A-2] contador totalReservas antes=6 depois=7
+[20:21:01.461][ClienteHandler-A-3] RESERVAR assento=7 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.472][ClienteHandler-A-4] RESERVAR assento=7 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.483][ClienteHandler-A-2] RESERVAR assento=8 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.493][ClienteHandler-A-2] contador totalReservas antes=7 depois=8
+[20:21:01.503][ClienteHandler-A-3] RESERVAR assento=8 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.514][ClienteHandler-A-4] RESERVAR assento=8 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.525][ClienteHandler-A-2] RESERVAR assento=9 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.535][ClienteHandler-A-2] contador totalReservas antes=8 depois=9
+[20:21:01.545][ClienteHandler-A-3] RESERVAR assento=9 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.556][ClienteHandler-A-4] RESERVAR assento=9 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.566][ClienteHandler-A-2] RESERVAR assento=10 usuario=clienteB2 antes=LIVRE depois=clienteB2
+[20:21:01.576][ClienteHandler-A-2] contador totalReservas antes=9 depois=10
+[20:21:01.577][ClienteHandler-A-2] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:44834
+[20:21:01.577][ClienteHandler-A-2] Conexao encerrada. Total conectados=2
+[20:21:01.587][ClienteHandler-A-3] RESERVAR assento=10 usuario=clienteB3 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.587][ClienteHandler-A-3] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:44844
+[20:21:01.587][ClienteHandler-A-3] Conexao encerrada. Total conectados=1
+[20:21:01.597][ClienteHandler-A-4] RESERVAR assento=10 usuario=clienteB1 antes=OCUPADO depois=OCUPADO motivo=ASSENTO_OCUPADO
+[20:21:01.598][ClienteHandler-A-4] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:44842
+[20:21:01.598][ClienteHandler-A-4] Conexao encerrada. Total conectados=0
+[20:21:01.598][ClienteHandler-A-5] Cliente conectado: /127.0.0.1:44860 (total conectados=1)
+[20:21:01.599][ClienteHandler-A-5] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:44860
+[20:21:01.599][ClienteHandler-A-5] Conexao encerrada. Total conectados=0
 
 --- Resumo cenario B ---
 Requisicoes enviadas : 30

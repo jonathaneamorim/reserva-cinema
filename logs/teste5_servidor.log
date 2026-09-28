@@ -1,0 +1,28 @@
+[20:21:01.993][main] Sem --peer configurado - executando como no unico. Papel=PRIMARIA
+[20:21:01.997][Replicacao-Servidor-A] Canal de replicacao escutando na porta 6000
+[20:21:02.004][StatusUDP] StatusUDP escutando na porta 5100
+[20:21:02.005][main] === Servidor 'A' iniciado === papel=PRIMARIA porta-tcp=5000 porta-udp=5100 porta-repl=6000 sync=true delay-ms=10 (sem peer)
+[20:21:02.032][ClienteHandler-A-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:40246 (total conectados=1)
+[20:21:02.033][ClienteHandler-A-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:40246
+[20:21:02.034][ClienteHandler-A-1] Conexao encerrada. Total conectados=0
+[20:21:02.375][StatusUDP] UDP STATUS respondido para /127.0.0.1:34156
+[20:21:02.961][StatusUDP] UDP STATUS respondido para /127.0.0.1:55432
+[20:21:02.963][ClienteHandler-A-2] Cliente conectado: /127.0.0.1:53016 (total conectados=1)
+[20:21:02.966][ClienteHandler-A-2] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /127.0.0.1:53016
+[20:21:02.966][ClienteHandler-A-2] Conexao encerrada. Total conectados=0
+[20:21:02.977][StatusUDP] UDP STATUS respondido para /127.0.0.1:33705
+[20:21:02.977][ClienteHandler-A-3] Cliente conectado: /127.0.0.1:53022 (total conectados=1)
+[20:21:02.978][ClienteHandler-A-3] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /127.0.0.1:53022
+[20:21:02.978][ClienteHandler-A-3] Conexao encerrada. Total conectados=0
+[20:21:02.979][StatusUDP] UDP STATUS respondido para /127.0.0.1:52827
+[20:21:02.979][ClienteHandler-A-4] Cliente conectado: /127.0.0.1:53038 (total conectados=1)
+[20:21:02.980][ClienteHandler-A-4] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /127.0.0.1:53038
+[20:21:02.980][ClienteHandler-A-4] Conexao encerrada. Total conectados=0
+[20:21:02.981][StatusUDP] UDP STATUS respondido para /127.0.0.1:49279
+[20:21:02.982][ClienteHandler-A-5] Cliente conectado: /127.0.0.1:53052 (total conectados=1)
+[20:21:02.982][ClienteHandler-A-5] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /127.0.0.1:53052
+[20:21:02.982][ClienteHandler-A-5] Conexao encerrada. Total conectados=0
+[20:21:02.983][StatusUDP] UDP STATUS respondido para /127.0.0.1:49385
+[20:21:02.983][ClienteHandler-A-6] Cliente conectado: /127.0.0.1:53056 (total conectados=1)
+[20:21:02.984][ClienteHandler-A-6] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /127.0.0.1:53056
+[20:21:02.984][ClienteHandler-A-6] Conexao encerrada. Total conectados=0
