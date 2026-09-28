@@ -1,11 +1,11 @@
-[20:20:56.066][Replicacao-Servidor-B] Canal de replicacao escutando na porta 6001
-[20:20:56.069][main] Peer localhost:6000 respondeu que e PRIMARIA - assumindo BACKUP e pedindo snapshot.
-[20:20:56.071][main] Snapshot recebido do par e aplicado com sucesso (sincronizacao inicial).
-[20:20:56.078][StatusUDP] StatusUDP escutando na porta 5101
-[20:20:56.079][main] === Servidor 'B' iniciado === papel=BACKUP porta-tcp=5001 porta-udp=5101 porta-repl=6001 sync=true delay-ms=10 peer=localhost:6000
-[20:20:56.115][ClienteHandler-B-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:35964 (total conectados=1)
-[20:20:56.115][ClienteHandler-B-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:35964
-[20:20:56.115][ClienteHandler-B-1] Conexao encerrada. Total conectados=0
-[20:20:56.732][ClienteHandler-B-2] Cliente conectado: /127.0.0.1:47430 (total conectados=1)
-[20:20:56.735][ClienteHandler-B-2] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:47430
-[20:20:56.736][ClienteHandler-B-2] Conexao encerrada. Total conectados=0
+[20:25:57.320][Replicacao-Servidor-B] Canal de replicacao escutando na porta 6001
+[20:25:57.322][main] Peer localhost:6000 respondeu que e PRIMARIA - assumindo BACKUP e pedindo snapshot.
+[20:25:57.324][main] Snapshot recebido do par e aplicado com sucesso (sincronizacao inicial).
+[20:25:57.330][StatusUDP] StatusUDP escutando na porta 5101
+[20:25:57.331][main] === Servidor 'B' iniciado === papel=BACKUP porta-tcp=5001 porta-udp=5101 porta-repl=6001 sync=true delay-ms=10 peer=localhost:6000
+[20:25:57.379][ClienteHandler-B-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:48350 (total conectados=1)
+[20:25:57.380][ClienteHandler-B-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:48350
+[20:25:57.380][ClienteHandler-B-1] Conexao encerrada. Total conectados=0
+[20:25:57.950][ClienteHandler-B-2] Cliente conectado: /127.0.0.1:54396 (total conectados=1)
+[20:25:57.952][ClienteHandler-B-2] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:54396
+[20:25:57.952][ClienteHandler-B-2] Conexao encerrada. Total conectados=0
