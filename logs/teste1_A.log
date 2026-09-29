@@ -1,19 +1,19 @@
-[20:25:57.220][Replicacao-Servidor-A] Canal de replicacao escutando na porta 6000
-[20:25:57.222][main] Peer localhost:6001 nao respondeu (indisponivel agora) - mantendo papel definido por --papel=PRIMARIA
-[20:25:57.226][main] === Servidor 'A' iniciado === papel=PRIMARIA porta-tcp=5000 porta-udp=5100 porta-repl=6000 sync=true delay-ms=10 peer=localhost:6001
-[20:25:57.227][StatusUDP] StatusUDP escutando na porta 5100
-[20:25:57.277][ClienteHandler-A-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:45080 (total conectados=1)
-[20:25:57.279][ClienteHandler-A-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:45080
-[20:25:57.279][ClienteHandler-A-1] Conexao encerrada. Total conectados=0
-[20:25:57.912][ClienteHandler-A-2] Cliente conectado: /127.0.0.1:48622 (total conectados=1)
-[20:25:57.914][ClienteHandler-A-2] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:48622
-[20:25:57.914][ClienteHandler-A-2] Conexao encerrada. Total conectados=0
-[20:25:57.998][ClienteHandler-A-3] Cliente conectado: /127.0.0.1:48634 (total conectados=1)
-[20:25:57.999][ClienteHandler-A-4] Cliente conectado: /127.0.0.1:48642 (total conectados=2)
-[20:25:57.999][ClienteHandler-A-5] Cliente conectado: /127.0.0.1:48640 (total conectados=3)
-[20:25:58.003][ClienteHandler-A-5] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:48640
-[20:25:58.003][ClienteHandler-A-3] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:48634
-[20:25:58.003][ClienteHandler-A-4] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:48642
-[20:25:58.003][ClienteHandler-A-5] Conexao encerrada. Total conectados=2
-[20:25:58.003][ClienteHandler-A-3] Conexao encerrada. Total conectados=1
-[20:25:58.004][ClienteHandler-A-4] Conexao encerrada. Total conectados=0
+[01:06:16.726][Replicacao-Servidor-A] Canal de replicacao escutando na porta 6000
+[01:06:16.728][main] Peer localhost:6001 nao respondeu (indisponivel agora) - mantendo papel definido por --papel=PRIMARIA
+[01:06:16.733][StatusUDP] StatusUDP escutando na porta 5100
+[01:06:16.734][main] === Servidor 'A' iniciado === papel=PRIMARIA porta-tcp=5000 porta-udp=5100 porta-repl=6000 sync=true delay-ms=10 peer=localhost:6001
+[01:06:16.773][ClienteHandler-A-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:58104 (total conectados=1)
+[01:06:16.776][ClienteHandler-A-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:58104
+[01:06:16.776][ClienteHandler-A-1] Conexao encerrada. Total conectados=0
+[01:06:17.408][ClienteHandler-A-2] Cliente conectado: /127.0.0.1:59938 (total conectados=1)
+[01:06:17.409][ClienteHandler-A-2] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:59938
+[01:06:17.410][ClienteHandler-A-2] Conexao encerrada. Total conectados=0
+[01:06:17.491][ClienteHandler-A-3] Cliente conectado: /127.0.0.1:59950 (total conectados=1)
+[01:06:17.491][ClienteHandler-A-4] Cliente conectado: /127.0.0.1:59968 (total conectados=2)
+[01:06:17.491][ClienteHandler-A-5] Cliente conectado: /127.0.0.1:59952 (total conectados=3)
+[01:06:17.494][ClienteHandler-A-3] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:59950
+[01:06:17.494][ClienteHandler-A-4] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:59968
+[01:06:17.494][ClienteHandler-A-5] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:59952
+[01:06:17.494][ClienteHandler-A-3] Conexao encerrada. Total conectados=2
+[01:06:17.494][ClienteHandler-A-4] Conexao encerrada. Total conectados=1
+[01:06:17.495][ClienteHandler-A-5] Conexao encerrada. Total conectados=0

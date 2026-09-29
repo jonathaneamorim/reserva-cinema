@@ -1,18 +1,10 @@
-[20:26:04.583][Replicacao-Servidor-B] Canal de replicacao escutando na porta 6001
-[20:26:04.586][main] Peer localhost:6000 respondeu que e PRIMARIA - assumindo BACKUP e pedindo snapshot.
-[20:26:04.587][main] Snapshot recebido do par e aplicado com sucesso (sincronizacao inicial).
-[20:26:04.595][StatusUDP] StatusUDP escutando na porta 5101
-[20:26:04.595][main] === Servidor 'B' iniciado === papel=BACKUP porta-tcp=5001 porta-udp=5101 porta-repl=6001 sync=true delay-ms=10 peer=localhost:6000
-[20:26:04.628][ClienteHandler-B-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:55456 (total conectados=1)
-[20:26:04.628][ClienteHandler-B-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:55456
-[20:26:04.628][ClienteHandler-B-1] Conexao encerrada. Total conectados=0
-[20:26:05.540][Replicacao-Conexao-B] replicacao recebida: RESERVAR assento=30 usuario=leo
-[20:26:07.594][Heartbeat-B] !!! PRIMARIA (localhost:6000) sem responder ha 3002ms (timeout=3000ms) - PROMOVENDO este no (B) a PRIMARIA (failover) !!!
-[20:26:10.594][ClienteHandler-B-2] Cliente conectado: /127.0.0.1:42752 (total conectados=1)
-[20:26:10.596][ClienteHandler-B-2] RESERVAR assento=30 usuario=leo (idempotente: ja era o dono) -> OK
-[20:26:10.596][ClienteHandler-B-2][ERRO] Nao foi possivel replicar para a backup (localhost:6000): Conexão recusada - primaria segue em MODO DEGRADADO (sem backup ativa).
-[20:26:10.609][ClienteHandler-B-2] RESERVAR assento=31 usuario=leo antes=LIVRE depois=leo
-[20:26:10.620][ClienteHandler-B-2] contador totalReservas antes=1 depois=2
-[20:26:10.621][ClienteHandler-B-2][ERRO] Nao foi possivel replicar para a backup (localhost:6000): Conexão recusada - primaria segue em MODO DEGRADADO (sem backup ativa).
-[20:26:10.622][ClienteHandler-B-2] Cliente encerrou a sessao normalmente (SAIR): /127.0.0.1:42752
-[20:26:10.622][ClienteHandler-B-2] Conexao encerrada. Total conectados=0
+[01:06:24.314][Replicacao-Servidor-B] Canal de replicacao escutando na porta 6001
+[01:06:24.317][main] Peer localhost:6000 respondeu que e PRIMARIA - assumindo BACKUP e pedindo snapshot.
+[01:06:24.318][main] Snapshot recebido do par e aplicado com sucesso (sincronizacao inicial).
+[01:06:24.322][main] === Servidor 'B' iniciado === papel=BACKUP porta-tcp=5001 porta-udp=5101 porta-repl=6001 sync=true delay-ms=10 peer=localhost:6000
+[01:06:24.323][StatusUDP] StatusUDP escutando na porta 5101
+[01:06:24.370][ClienteHandler-B-1] Cliente conectado: /[0:0:0:0:0:0:0:1]:45948 (total conectados=1)
+[01:06:24.370][ClienteHandler-B-1] Cliente desconectou sem enviar SAIR (EOF/conexao fechada pelo outro lado): /[0:0:0:0:0:0:0:1]:45948
+[01:06:24.371][ClienteHandler-B-1] Conexao encerrada. Total conectados=0
+[01:06:25.283][Replicacao-Conexao-B] replicacao recebida: RESERVAR assento=30 usuario=leo
+[01:06:27.325][Heartbeat-B] !!! PRIMARIA (localhost:6000) sem responder ha 3002ms (timeout=3000ms) - PROMOVENDO este no (B) a PRIMARIA (failover) !!!
